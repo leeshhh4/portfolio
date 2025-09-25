@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #111;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul{
+    display: flex;
+    position: sticky;
+    width: 300px;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    padding: 350px 0;
+    box-sizing: border-box;
+}
+ul li{
+    width: 100%;}
+
+.wrap div{
+    height: auto;
+}
+
+.bookclub{
+    width: 860px;
+}
+.rooty{
+    width: 800px;
+}
+.rooty img{
+    width: 100%;
+}
+
+
+
+@media (max-width: 1200px){
+    .wrap{
+        flex-direction: column;
+        width: 100%;
+    }
+    ul{
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        flex-wrap: nowrap;
+    }
+    ul li{
+        padding-right: 20px;
+    }
+    .wrap div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+@media (max-width: 860px){
+    .wrap div img{
+        width: 100%;
+    }
+}
+
+
+.fixed {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}
+
+.fixed:hover {
+  opacity: 0.8;
+}
+
+.fixed2 {
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+}
+
+.fixed2:hover {
+  opacity: 0.8;
+}
